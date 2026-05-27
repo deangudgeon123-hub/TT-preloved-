@@ -11,7 +11,7 @@ export default function Home() {
 
         <div className="navLinks">
           <Link href="/products">Products</Link>
-          <a href="mailto:hello@ttpreloved.co.uk" className="button">Enquire</a>
+          <Link href="/contact" className="button">Enquire</Link>
         </div>
       </nav>
 
@@ -26,16 +26,14 @@ export default function Home() {
           </h1>
 
           <p className="lead">
-            TT Preloved brings together premium second-life pieces with a luxury,
-            boutique feel. Carefully selected products, cleaner presentation and
-            timeless styling.
+            TT Preloved brings together carefully selected second-life pieces with
+            a premium boutique feel. Discover timeless finds, standout staples
+            and quality products chosen with style in mind.
           </p>
 
           <div className="actions">
             <Link href="/products" className="button">Browse products</Link>
-            <a href="mailto:hello@ttpreloved.co.uk" className="secondaryButton">
-              Contact us
-            </a>
+            <Link href="/contact" className="secondaryButton">Ask about an item</Link>
           </div>
         </div>
 
@@ -47,8 +45,8 @@ export default function Home() {
             </h2>
 
             <p style={{ color: 'rgba(255,255,255,.72)', lineHeight: 1.8 }}>
-              Luxury-inspired styling, standout finds and a cleaner shopping
-              experience built for modern resale.
+              From everyday essentials to standout finds, every piece is presented
+              with a refined luxury-inspired feel.
             </p>
 
             <div style={{ marginTop: '28px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
@@ -65,31 +63,28 @@ export default function Home() {
           <p className="gold"><strong>Why shop TT Preloved?</strong></p>
 
           <h2 style={{ fontSize: '48px', maxWidth: '760px' }}>
-            Minimal, premium and built around quality over clutter.
+            Curated pieces, premium presentation and quality over quantity.
           </h2>
 
           <div className="grid3">
             <div className="card">
-              <h3>Luxury aesthetic</h3>
+              <h3>Premium presentation</h3>
               <p>
-                Cleaner layouts, softer colours and premium presentation inspired
-                by high-end fashion retailers.
+                Clean styling, refined layouts and a luxury resale aesthetic.
               </p>
             </div>
 
             <div className="card">
-              <h3>Curated stock</h3>
+              <h3>Carefully selected</h3>
               <p>
-                Hand-picked products and quality-first listings instead of endless
-                low-quality clutter.
+                Products chosen for quality, condition, wearability and timeless style.
               </p>
             </div>
 
             <div className="card">
-              <h3>Built to grow</h3>
+              <h3>Simple enquiries</h3>
               <p>
-                Starting simple with enquiries and evolving into a full resale
-                platform over time.
+                Ask about sizing, condition, availability or delivery before purchasing.
               </p>
             </div>
           </div>
