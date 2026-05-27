@@ -17,18 +17,17 @@ export default function Home() {
 
       <section className="hero">
         <div>
-          <span className="kicker">Luxury resale • curated pieces • premium finds</span>
+          <span className="kicker">Home • lifestyle • garden • fitness</span>
 
           <h1>
             A cleaner way to shop
             <br />
-            preloved fashion.
+            preloved finds.
           </h1>
 
           <p className="lead">
-            TT Preloved brings together carefully selected second-life pieces with
-            a premium boutique feel. Discover timeless finds, standout staples
-            and quality products chosen with style in mind.
+            TT Preloved brings together carefully selected second-life home and lifestyle pieces with
+            a premium boutique feel. Discover useful, standout and quality products chosen with care.
           </p>
 
           <div className="actions">
@@ -39,20 +38,20 @@ export default function Home() {
 
         <div className="heroCard">
           <div className="darkCard">
-            <p className="gold">TT Signature Collection</p>
+            <p className="gold">TT Signature Finds</p>
             <h2 style={{ fontSize: '42px', marginTop: '10px' }}>
-              Premium pieces with personality.
+              Quality pieces with personality.
             </h2>
 
             <p style={{ color: 'rgba(255,255,255,.72)', lineHeight: 1.8 }}>
-              From everyday essentials to standout finds, every piece is presented
-              with a refined luxury-inspired feel.
+              From home essentials to garden bars, sewing machines, fitness kit and family items,
+              every piece is presented with a refined luxury-inspired feel.
             </p>
 
             <div style={{ marginTop: '28px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              <span className="secondaryButton">Designer</span>
-              <span className="secondaryButton">Streetwear</span>
-              <span className="secondaryButton">Accessories</span>
+              <span className="secondaryButton">Home</span>
+              <span className="secondaryButton">Garden</span>
+              <span className="secondaryButton">Fitness</span>
             </div>
           </div>
         </div>
@@ -63,28 +62,28 @@ export default function Home() {
           <p className="gold"><strong>Why shop TT Preloved?</strong></p>
 
           <h2 style={{ fontSize: '48px', maxWidth: '760px' }}>
-            Curated pieces, premium presentation and quality over quantity.
+            Curated home and lifestyle pieces, premium presentation and quality over quantity.
           </h2>
 
           <div className="grid3">
             <div className="card">
               <h3>Premium presentation</h3>
               <p>
-                Clean styling, refined layouts and a luxury resale aesthetic.
+                Clean styling, refined layouts and a polished resale experience.
               </p>
             </div>
 
             <div className="card">
               <h3>Carefully selected</h3>
               <p>
-                Products chosen for quality, condition, wearability and timeless style.
+                Products chosen for quality, condition, usefulness and lasting value.
               </p>
             </div>
 
             <div className="card">
               <h3>Simple enquiries</h3>
               <p>
-                Ask about sizing, condition, availability or delivery before purchasing.
+                Ask about condition, measurements, availability or delivery before purchasing.
               </p>
             </div>
           </div>
@@ -94,7 +93,7 @@ export default function Home() {
       <footer className="footer">
         <p className="gold"><strong>TT Preloved</strong></p>
         <h2 style={{ fontFamily: 'cursive', fontWeight: 400, fontSize: '52px' }}>
-          Premium pieces. Second-life prices.
+          Quality finds. Second-life prices.
         </h2>
 
         <Link href="/products" className="button">
