@@ -33,9 +33,26 @@ a {
 }
 
 .logo {
-  font-size: 24px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 26px;
+  color: #171717;
+}
+
+.logoMark {
   font-weight: 900;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.logoScript {
+  font-family: "Brush Script MT", "Segoe Script", "Apple Chancery", cursive;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #b7893d;
+  line-height: 1;
 }
 
 .navLinks {
