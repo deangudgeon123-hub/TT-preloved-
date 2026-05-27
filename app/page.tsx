@@ -4,11 +4,10 @@ export default function Home() {
   return (
     <main className="site">
       <nav className="nav">
-        <div>
-          <Link href="/" className="logo">
-            TT <span style={{ fontFamily: 'cursive', fontWeight: 400 }}>Preloved</span>
-          </Link>
-        </div>
+        <Link href="/" className="logo">
+          <span className="logoMark">TT</span>
+          <span className="logoScript">Preloved</span>
+        </Link>
 
         <div className="navLinks">
           <Link href="/products">Products</Link>
