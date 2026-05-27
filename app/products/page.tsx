@@ -22,7 +22,11 @@ export default function ProductsPage() {
   return (
     <main className="site">
       <nav className="nav">
-        <Link href="/" className="logo">TT Preloved</Link>
+        <Link href="/" className="logo">
+          <span className="logoMark">TT</span>
+          <span className="logoScript">Preloved</span>
+        </Link>
+
         <div className="navLinks">
           <Link href="/products">Products</Link>
         </div>
