@@ -67,9 +67,9 @@ export default function Home() {
 
           <div className="grid3">
             <div className="card">
-              <h3>Premium presentation</h3>
+              <h3>Worth rehoming</h3>
               <p>
-                Clean styling, refined layouts and a polished resale experience.
+                Quality second-life products selected for usefulness, style and longevity.
               </p>
             </div>
 
