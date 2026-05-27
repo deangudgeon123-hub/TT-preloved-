@@ -2,19 +2,24 @@ import Link from 'next/link';
 
 const products = [
   {
-    name: 'Premium Trainers',
-    price: '£65',
-    category: 'Footwear',
+    name: 'Wooden Cot',
+    price: '£85',
+    category: 'Family',
   },
   {
-    name: 'Designer Handbag',
-    price: '£120',
-    category: 'Accessories',
+    name: 'Singer Sewing Machine',
+    price: '£140',
+    category: 'Home',
   },
   {
-    name: 'Luxury Jacket',
-    price: '£90',
-    category: 'Clothing',
+    name: 'Adjustable Dumbbell Set',
+    price: '£95',
+    category: 'Fitness',
+  },
+  {
+    name: 'Garden Bar Unit',
+    price: '£220',
+    category: 'Garden',
   },
 ];
 
@@ -29,6 +34,7 @@ export default function ProductsPage() {
 
         <div className="navLinks">
           <Link href="/products">Products</Link>
+          <Link href="/contact" className="button">Enquire</Link>
         </div>
       </nav>
 
@@ -36,7 +42,7 @@ export default function ProductsPage() {
         <p className="gold"><strong>Products</strong></p>
         <h1>Latest preloved finds.</h1>
         <p className="lead">
-          Replace these placeholders with real products, photos and descriptions.
+          Explore curated home, garden, family and lifestyle products.
         </p>
       </section>
 
@@ -48,7 +54,7 @@ export default function ProductsPage() {
               <p className="gold"><strong>{product.category}</strong></p>
               <h3>{product.name}</h3>
               <p><strong>{product.price}</strong></p>
-              <a className="button" href="mailto:hello@ttpreloved.co.uk">Enquire</a>
+              <Link className="button" href="/contact">Enquire</Link>
             </article>
           ))}
         </div>
