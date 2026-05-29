@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { generateOrderId, type CartItem } from '@/lib/orders';
-import { getProductById } from '@/lib/products';
+import { generateOrderId, type CartItem } from '../../../lib/orders';
+import { getProductById } from '../../../lib/products';
 
 export async function POST(request: NextRequest) {
   try {
