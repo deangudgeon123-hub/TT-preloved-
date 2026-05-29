@@ -2,8 +2,9 @@ import { NextResponse } from 'next/server';
 import { getStripe } from '../../../lib/stripe';
 
 export async function GET() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tt-preloved.vercel.app';
+
   try {
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tt-preloved.vercel.app';
     const stripe = getStripe();
 
     const session = await stripe.checkout.sessions.create({
@@ -24,6 +25,6 @@ export async function GET() {
 
     return NextResponse.redirect(session.url);
   } catch {
-    return NextResponse.redirect('/products');
+    return NextResponse.redirect(`${siteUrl}/products`);
   }
 }
