@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { stripe } from '../../../../lib/stripe';
+import { stripe } from '../../../lib/stripe';
 
 export default async function BuyBabyCotPage() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://tt-preloved.vercel.app';
