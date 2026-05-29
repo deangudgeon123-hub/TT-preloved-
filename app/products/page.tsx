@@ -2,24 +2,28 @@ import Link from 'next/link';
 
 const products = [
   {
-    name: 'Wooden Cot',
-    price: '£85',
+    name: 'Baby Cot',
+    price: '£60',
     category: 'Family',
+    buyHref: '/api/checkout',
   },
   {
     name: 'Singer Sewing Machine',
     price: '£140',
     category: 'Home',
+    buyHref: '/contact',
   },
   {
     name: 'Adjustable Dumbbell Set',
     price: '£95',
     category: 'Fitness',
+    buyHref: '/contact',
   },
   {
     name: 'Garden Bar Unit',
     price: '£220',
     category: 'Garden',
+    buyHref: '/contact',
   },
 ];
 
@@ -54,7 +58,11 @@ export default function ProductsPage() {
               <p className="gold"><strong>{product.category}</strong></p>
               <h3>{product.name}</h3>
               <p><strong>{product.price}</strong></p>
-              <Link className="button" href="/contact">Enquire</Link>
+              {product.name === 'Baby Cot' ? (
+                <Link className="button" href="/contact">Buy Now • £60</Link>
+              ) : (
+                <Link className="button" href="/contact">Enquire</Link>
+              )}
             </article>
           ))}
         </div>
