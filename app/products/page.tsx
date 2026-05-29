@@ -5,7 +5,7 @@ const products = [
     name: 'Baby Cot',
     price: '£60',
     category: 'Family',
-    buyHref: '/api/checkout',
+    buyHref: '/buy/baby-cot',
   },
   {
     name: 'Singer Sewing Machine',
@@ -59,7 +59,7 @@ export default function ProductsPage() {
               <h3>{product.name}</h3>
               <p><strong>{product.price}</strong></p>
               {product.name === 'Baby Cot' ? (
-                <Link className="button" href="/contact">Buy Now • £60</Link>
+                <Link className="button" href={product.buyHref}>Buy Now • £60</Link>
               ) : (
                 <Link className="button" href="/contact">Enquire</Link>
               )}
