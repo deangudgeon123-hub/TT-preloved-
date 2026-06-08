@@ -5,7 +5,7 @@ const products = [
     name: 'Dinli 450cc Road Legal Quad Bike',
     price: '£3,200',
     category: 'Vehicles',
-    description: 'Dinli 450cc road legal quad bike. No MOT — ideal project or off-road fun machine.',
+    description: 'Powerful Dinli 450cc road legal quad bike in great condition. A rare and capable machine ready for its next owner.',
     buyHref: 'https://buy.stripe.com/3cI7sM2yC5OH9nr5zUgEg00',
     image: '/dinli-450-sale.PNG',
   },
