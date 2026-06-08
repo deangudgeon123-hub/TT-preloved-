@@ -6,6 +6,7 @@ const products = [
     price: '£60',
     category: 'Family',
     buyHref: '/buy/baby-cot',
+    image: '/dinli-450-sale.PNG',
   },
   {
     name: 'Singer Sewing Machine',
@@ -54,7 +55,11 @@ export default function ProductsPage() {
         <div className="grid3">
           {products.map((product) => (
             <article key={product.name} className="productCard">
-              <div className="productImage">Product image</div>
+              {product.image ? (
+                <img className="productImage" src={product.image} alt={product.name} />
+              ) : (
+                <div className="productImage">Product image</div>
+              )}
               <p className="gold"><strong>{product.category}</strong></p>
               <h3>{product.name}</h3>
               <p><strong>{product.price}</strong></p>
