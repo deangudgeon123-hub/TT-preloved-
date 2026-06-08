@@ -2,10 +2,11 @@ import Link from 'next/link';
 
 const products = [
   {
-    name: 'Baby Cot',
-    price: '£60',
-    category: 'Family',
-    buyHref: '/buy/baby-cot',
+    name: 'Dinli 450cc Road Legal Quad Bike',
+    price: '£3,200',
+    category: 'Vehicles',
+    description: 'Dinli 450cc road legal quad bike. No MOT — ideal project or off-road fun machine.',
+    buyHref: 'https://buy.stripe.com/3cI7sM2yC5OH9nr5zUgEg00',
     image: '/dinli-450-sale.PNG',
   },
   {
@@ -62,11 +63,14 @@ export default function ProductsPage() {
               )}
               <p className="gold"><strong>{product.category}</strong></p>
               <h3>{product.name}</h3>
+              {product.description && <p>{product.description}</p>}
               <p><strong>{product.price}</strong></p>
-              {product.name === 'Baby Cot' ? (
-                <Link className="button" href={product.buyHref}>Buy Now • £60</Link>
-              ) : (
+              {product.buyHref.startsWith('http') ? (
+                <a className="button" href={product.buyHref}>Buy Now • {product.price}</a>
+              ) : product.buyHref === '/contact' ? (
                 <Link className="button" href="/contact">Enquire</Link>
+              ) : (
+                <Link className="button" href={product.buyHref}>Buy Now • {product.price}</Link>
               )}
             </article>
           ))}
